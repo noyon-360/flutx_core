@@ -1,0 +1,25 @@
+import 'package:flutter/material.dart';
+import 'package:flutx_core/flutx_core.dart';
+
+import 'routes/app_routes.dart';
+import 'routes/route_generate.dart.dart';
+
+void main() {
+  runApp(const PackageShowcaseApp());
+}
+
+class PackageShowcaseApp extends StatelessWidget {
+  const PackageShowcaseApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Packages Showcase',
+      theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: true),
+      initialRoute: AppRoutes.home,
+      onGenerateRoute: RouteGenerate.generateRoute,
+      navigatorKey: NavigationService().navigatorKey,
+      navigatorObservers: [RouteObserver<PageRoute>()],
+    );
+  }
+}
