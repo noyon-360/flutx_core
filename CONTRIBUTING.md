@@ -66,8 +66,7 @@ This project adheres to a code of conduct. By participating, you are expected to
 
 1. **Clone the repository**:
    \`\`\`bash
-   git clone https://github.com/your-username/flutter-packages-suite.git
-   cd flutter-packages-suite
+   git clone https://github.com/noyon-360/flutx_core.git
    \`\`\`
 
 2. **Install dependencies**:

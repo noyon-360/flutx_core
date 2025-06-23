@@ -49,7 +49,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🔍 Flutter Validators
 
-#### [1.0.0] - 2024-01-15
+#### [1.0.0] - 2025-06-23
 ##### Added
 - Email validation with RFC 5322 compliance
 - Strong password validation with customizable rules
@@ -74,7 +74,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🎨 Flutter Text Styles
 
-#### [1.0.0] - 2024-01-15
+#### [1.0.0] - 2025-01-15
 ##### Added
 - Semantic typography system based on Material Design 3
 - Responsive text scaling for different screen sizes
@@ -97,7 +97,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🔐 Flutter Secure Storage Services
 
-#### [1.0.0] - 2024-01-15
+#### [1.0.0] - 2025-06-23
 ##### Added
 - AES-256 encryption for all stored data
 - Multiple storage backend support (Secure Storage, SharedPreferences, SQLite)
@@ -121,7 +121,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 📝 Flutter String Extensions
 
-#### [1.0.0] - 2024-01-15
+#### [1.0.0] - 2025-06-23
 ##### Added
 - Email, URL, and phone number validation extensions
 - Case conversion utilities (camelCase, PascalCase, snake_case)
@@ -145,7 +145,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 📏 Flutter App Sizes
 
-#### [1.0.0] - 2024-01-15
+#### [1.0.0] - 2025-06-23
 ##### Added
 - Consistent spacing system with predefined sizes
 - Responsive design utilities for different screen sizes

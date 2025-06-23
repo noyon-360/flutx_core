@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutx_core/flutx_core.dart';
+import 'package:flutx_core/core/routes/config/navigation_config.dart';
 
 import 'routes/app_routes.dart';
 import 'routes/route_generate.dart.dart';
@@ -18,8 +18,8 @@ class PackageShowcaseApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: true),
       initialRoute: AppRoutes.home,
       onGenerateRoute: RouteGenerate.generateRoute,
-      navigatorKey: NavigationService().navigatorKey,
-      navigatorObservers: [RouteObserver<PageRoute>()],
+      navigatorKey: NavigationConfig.navigatorKey,
+      navigatorObservers: NavigationConfig.navigatorObservers,
     );
   }
 }
