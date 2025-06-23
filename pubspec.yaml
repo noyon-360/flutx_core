@@ -2,7 +2,7 @@ name: flutx_core
 description: A Flutter package that provides basic utilities and components for building Flutter applications.
 homepage: https://github.com/noyon-360/flutx_core.git
 
-version: 1.0.1
+version: 1.0.2
 
 environment:
   sdk: ^3.8.1
