@@ -361,6 +361,650 @@ class AppTextStyles {
     fontFamily: fontFamily ?? _defaultFontFamily,
   );
 
+  // MARK: - Shorthand Text Styles (New Feature)
+
+  /// Shorthand text styles with font size and weight
+  /// Usage: AppTextStyles.text12w400()
+  static TextStyle text8w100({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(8),
+        fontWeight: FontWeight.w100,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text8w200({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(8),
+        fontWeight: FontWeight.w200,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text8w300({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(8),
+        fontWeight: FontWeight.w300,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text8w400({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(8),
+        fontWeight: FontWeight.w400,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text8w500({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(8),
+        fontWeight: FontWeight.w500,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text8w600({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(8),
+        fontWeight: FontWeight.w600,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text8w700({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(8),
+        fontWeight: FontWeight.w700,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text8w800({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(8),
+        fontWeight: FontWeight.w800,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text8w900({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(8),
+        fontWeight: FontWeight.w900,
+        color: color,
+        fontFamily: fontFamily,
+      );
+
+  static TextStyle text10w100({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(10),
+        fontWeight: FontWeight.w100,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text10w200({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(10),
+        fontWeight: FontWeight.w200,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text10w300({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(10),
+        fontWeight: FontWeight.w300,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text10w400({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(10),
+        fontWeight: FontWeight.w400,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text10w500({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(10),
+        fontWeight: FontWeight.w500,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text10w600({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(10),
+        fontWeight: FontWeight.w600,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text10w700({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(10),
+        fontWeight: FontWeight.w700,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text10w800({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(10),
+        fontWeight: FontWeight.w800,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text10w900({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(10),
+        fontWeight: FontWeight.w900,
+        color: color,
+        fontFamily: fontFamily,
+      );
+
+  static TextStyle text12w100({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(12),
+        fontWeight: FontWeight.w100,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text12w200({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(12),
+        fontWeight: FontWeight.w200,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text12w300({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(12),
+        fontWeight: FontWeight.w300,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text12w400({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(12),
+        fontWeight: FontWeight.w400,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text12w500({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(12),
+        fontWeight: FontWeight.w500,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text12w600({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(12),
+        fontWeight: FontWeight.w600,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text12w700({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(12),
+        fontWeight: FontWeight.w700,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text12w800({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(12),
+        fontWeight: FontWeight.w800,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text12w900({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(12),
+        fontWeight: FontWeight.w900,
+        color: color,
+        fontFamily: fontFamily,
+      );
+
+  static TextStyle text14w100({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(14),
+        fontWeight: FontWeight.w100,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text14w200({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(14),
+        fontWeight: FontWeight.w200,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text14w300({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(14),
+        fontWeight: FontWeight.w300,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text14w400({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(14),
+        fontWeight: FontWeight.w400,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text14w500({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(14),
+        fontWeight: FontWeight.w500,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text14w600({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(14),
+        fontWeight: FontWeight.w600,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text14w700({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(14),
+        fontWeight: FontWeight.w700,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text14w800({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(14),
+        fontWeight: FontWeight.w800,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text14w900({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(14),
+        fontWeight: FontWeight.w900,
+        color: color,
+        fontFamily: fontFamily,
+      );
+
+  static TextStyle text16w100({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(16),
+        fontWeight: FontWeight.w100,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text16w200({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(16),
+        fontWeight: FontWeight.w200,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text16w300({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(16),
+        fontWeight: FontWeight.w300,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text16w400({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(16),
+        fontWeight: FontWeight.w400,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text16w500({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(16),
+        fontWeight: FontWeight.w500,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text16w600({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(16),
+        fontWeight: FontWeight.w600,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text16w700({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(16),
+        fontWeight: FontWeight.w700,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text16w800({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(16),
+        fontWeight: FontWeight.w800,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text16w900({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(16),
+        fontWeight: FontWeight.w900,
+        color: color,
+        fontFamily: fontFamily,
+      );
+
+  static TextStyle text18w100({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(18),
+        fontWeight: FontWeight.w100,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text18w200({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(18),
+        fontWeight: FontWeight.w200,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text18w300({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(18),
+        fontWeight: FontWeight.w300,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text18w400({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(18),
+        fontWeight: FontWeight.w400,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text18w500({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(18),
+        fontWeight: FontWeight.w500,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text18w600({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(18),
+        fontWeight: FontWeight.w600,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text18w700({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(18),
+        fontWeight: FontWeight.w700,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text18w800({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(18),
+        fontWeight: FontWeight.w800,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text18w900({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(18),
+        fontWeight: FontWeight.w900,
+        color: color,
+        fontFamily: fontFamily,
+      );
+
+  static TextStyle text20w100({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(20),
+        fontWeight: FontWeight.w100,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text20w200({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(20),
+        fontWeight: FontWeight.w200,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text20w300({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(20),
+        fontWeight: FontWeight.w300,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text20w400({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(20),
+        fontWeight: FontWeight.w400,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text20w500({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(20),
+        fontWeight: FontWeight.w500,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text20w600({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(20),
+        fontWeight: FontWeight.w600,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text20w700({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(20),
+        fontWeight: FontWeight.w700,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text20w800({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(20),
+        fontWeight: FontWeight.w800,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text20w900({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(20),
+        fontWeight: FontWeight.w900,
+        color: color,
+        fontFamily: fontFamily,
+      );
+
+  static TextStyle text24w100({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(24),
+        fontWeight: FontWeight.w100,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text24w200({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(24),
+        fontWeight: FontWeight.w200,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text24w300({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(24),
+        fontWeight: FontWeight.w300,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text24w400({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(24),
+        fontWeight: FontWeight.w400,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text24w500({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(24),
+        fontWeight: FontWeight.w500,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text24w600({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(24),
+        fontWeight: FontWeight.w600,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text24w700({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(24),
+        fontWeight: FontWeight.w700,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text24w800({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(24),
+        fontWeight: FontWeight.w800,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text24w900({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(24),
+        fontWeight: FontWeight.w900,
+        color: color,
+        fontFamily: fontFamily,
+      );
+
+  static TextStyle text28w100({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(28),
+        fontWeight: FontWeight.w100,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text28w200({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(28),
+        fontWeight: FontWeight.w200,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text28w300({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(28),
+        fontWeight: FontWeight.w300,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text28w400({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(28),
+        fontWeight: FontWeight.w400,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text28w500({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(28),
+        fontWeight: FontWeight.w500,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text28w600({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(28),
+        fontWeight: FontWeight.w600,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text28w700({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(28),
+        fontWeight: FontWeight.w700,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text28w800({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(28),
+        fontWeight: FontWeight.w800,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text28w900({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(28),
+        fontWeight: FontWeight.w900,
+        color: color,
+        fontFamily: fontFamily,
+      );
+
+  static TextStyle text32w100({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(32),
+        fontWeight: FontWeight.w100,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text32w200({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(32),
+        fontWeight: FontWeight.w200,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text32w300({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(32),
+        fontWeight: FontWeight.w300,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text32w400({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(32),
+        fontWeight: FontWeight.w400,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text32w500({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(32),
+        fontWeight: FontWeight.w500,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text32w600({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(32),
+        fontWeight: FontWeight.w600,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text32w700({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(32),
+        fontWeight: FontWeight.w700,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text32w800({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(32),
+        fontWeight: FontWeight.w800,
+        color: color,
+        fontFamily: fontFamily,
+      );
+  static TextStyle text32w900({Color? color, String? fontFamily}) =>
+      _createStyle(
+        fontSize: _scaledSize(32),
+        fontWeight: FontWeight.w900,
+        color: color,
+        fontFamily: fontFamily,
+      );
+
   // MARK: - Utility Methods
 
   /// Create a custom text style with specified parameters
