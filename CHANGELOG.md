@@ -35,7 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [1.1.0] - 2025-08-08
+## [1.1.0+1] - 2025-08-08
 
 ### Added
 - 🎉 **Enhanced Navigation System** - Complete overhaul of navigation with dual support
