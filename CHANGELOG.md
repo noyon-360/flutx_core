@@ -35,6 +35,83 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.0] - 2025-08-08
+
+### Added
+- 🎉 **Enhanced Navigation System** - Complete overhaul of navigation with dual support
+- **Widget Navigation** - Direct widget navigation: `Go.sailTo(HomeScreen(data: data))`
+- **Named Route Navigation** - Enhanced named routes: `Go.sailToName("/home-screen", arguments: {...})`
+- **Advanced Transitions** - 7 new transition types: `fade`, `slideLeft`, `slideRight`, `slideUp`, `slideDown`, `scale`, `rotation`
+- **Default Configuration** - Global transition and duration settings
+- **Convenience Methods** - Quick access methods like `Go.fade()`, `Go.modal()`, `Go.slideLeft()`
+- **Dual Method Support** - Both widget and named route versions for all methods
+- **Custom Duration Support** - Per-navigation custom transition durations
+- **Enhanced Route Management** - Improved stack management with `freshStartTo()`, `swapTo()`
+
+### Changed
+- **NavigationService** - Complete rewrite with singleton pattern and enhanced features
+- **Go class** - Expanded with dual navigation support and convenience methods
+- **TransitionType enum** - Extended with new transition options
+- **FlutxNavigation** - Added configuration support for default settings
+
+### Features
+- ✅ **Dual Navigation**: Support both `Go.sailTo(Widget)` and `Go.sailToName(String)`
+- ✅ **7 Transition Types**: fade, slideLeft, slideRight, slideUp, slideDown, scale, rotation
+- ✅ **Custom Durations**: `Go.fade(screen, duration: Duration(milliseconds: 500))`
+- ✅ **Default Settings**: `NavigationService.setDefaultTransition(TransitionType.fade)`
+- ✅ **Convenience Methods**: `Go.modal()`, `Go.fade()`, `Go.slideLeft()` etc.
+- ✅ **Enhanced Stack Management**: `freshStartTo()`, `swapTo()`, `backtrack()`
+- ✅ **Route Observers**: Built-in route observation for analytics
+- ✅ **Type Safety**: Full type safety with generic result handling
+
+### Navigation Methods
+#### Widget Navigation
+- `Go.sailTo(Widget)` - Navigate to widget with transition
+- `Go.swapTo(Widget)` - Replace current route with widget
+- `Go.freshStartTo(Widget)` - Clear stack and navigate to widget
+- `Go.fade(Widget)` - Navigate with fade transition
+- `Go.slideLeft(Widget)` - Navigate with slide left transition
+- `Go.slideRight(Widget)` - Navigate with slide right transition
+- `Go.slideUp(Widget)` - Navigate with slide up transition
+- `Go.slideDown(Widget)` - Navigate with slide down transition
+- `Go.scale(Widget)` - Navigate with scale transition
+- `Go.rotation(Widget)` - Navigate with rotation transition
+- `Go.modal(Widget)` - Show as modal with slide up
+
+#### Named Route Navigation
+- `Go.sailToName(String)` - Navigate to named route
+- `Go.swapToName(String)` - Replace with named route
+- `Go.freshStartToName(String)` - Clear stack and navigate to named route
+- `Go.fadeToName(String)` - Navigate to named route with fade
+- `Go.slideLeftToName(String)` - Navigate to named route with slide left
+- `Go.slideRightToName(String)` - Navigate to named route with slide right
+- `Go.slideUpToName(String)` - Navigate to named route with slide up
+- `Go.slideDownToName(String)` - Navigate to named route with slide down
+- `Go.scaleToName(String)` - Navigate to named route with scale
+- `Go.rotationToName(String)` - Navigate to named route with rotation
+- `Go.modalToName(String)` - Show named route as modal
+
+### Performance
+- **Zero overhead** - Compile-time optimizations for navigation methods
+- **Memory efficient** - Singleton pattern with proper resource management
+- **Smooth animations** - Hardware-accelerated transitions with proper curves
+- **Fast navigation** - Optimized route building and stack management
+
+### Breaking Changes
+- **NavigationService API** - Some internal methods renamed (public API unchanged)
+- **TransitionType enum** - New values added (backward compatible)
+
+### Migration Guide
+#### From 1.0.3+1 to 1.1.0
+- **No breaking changes** for existing navigation code
+- **New methods available** - Enhanced navigation options
+- **Optional adoption** - Use new features where needed
+
+#### Before (still works):
+```dart
+Go.sailTo('/home-screen', arguments: data);
+Go.fade('/profile-screen');
+
 ## [1.0.3+1] - 2025-07-06
 
 ### Added

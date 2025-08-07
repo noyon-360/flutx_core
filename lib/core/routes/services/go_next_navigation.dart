@@ -1,9 +1,11 @@
+import 'package:flutter/material.dart';
+
 import 'navigation_service.dart';
 
 class Go {
-  /// Unified navigation - supports both String routes and Widget pages
+  /// Navigate to a widget directly with optional transition
   static Future<dynamic> sailTo(
-    dynamic destination, {
+    Widget destination, {
     dynamic arguments,
     TransitionType transition = TransitionType.platform,
     Duration? duration,
@@ -20,9 +22,24 @@ class Go {
     );
   }
 
-  /// Unified swap - supports both String routes and Widget pages
+  /// Navigate to a named route with optional transition
+  static Future<dynamic> sailToName(
+    String routeName, {
+    dynamic arguments,
+    TransitionType transition = TransitionType.platform,
+    Duration? duration,
+  }) {
+    return NavigationService().sailToName(
+      routeName,
+      arguments: arguments,
+      transition: transition,
+      duration: duration,
+    );
+  }
+
+  /// Replace current route with a widget
   static Future<dynamic> swapTo(
-    dynamic destination, {
+    Widget destination, {
     dynamic arguments,
     TransitionType transition = TransitionType.platform,
     Duration? duration,
@@ -39,9 +56,24 @@ class Go {
     );
   }
 
-  /// Unified fresh start - supports both String routes and Widget pages
+  /// Replace current route with a named route
+  static Future<dynamic> swapToName(
+    String routeName, {
+    dynamic arguments,
+    TransitionType transition = TransitionType.platform,
+    Duration? duration,
+  }) {
+    return NavigationService().swapToName(
+      routeName,
+      arguments: arguments,
+      transition: transition,
+      duration: duration,
+    );
+  }
+
+  /// Clear stack and navigate to widget
   static Future<dynamic> freshStartTo(
-    dynamic destination, {
+    Widget destination, {
     dynamic arguments,
     TransitionType transition = TransitionType.platform,
     Duration? duration,
@@ -55,6 +87,21 @@ class Go {
       duration: duration,
       maintainState: maintainState,
       fullscreenDialog: fullscreenDialog,
+    );
+  }
+
+  /// Clear stack and navigate to named route
+  static Future<dynamic> freshStartToName(
+    String routeName, {
+    dynamic arguments,
+    TransitionType transition = TransitionType.platform,
+    Duration? duration,
+  }) {
+    return NavigationService().freshStartToName(
+      routeName,
+      arguments: arguments,
+      transition: transition,
+      duration: duration,
     );
   }
 
@@ -79,11 +126,9 @@ class Go {
     return NavigationService().getCurrentRouteName();
   }
 
-  // Convenience methods with specific transitions
-
-  /// Navigate with fade transition - supports both String and Widget
+  // Convenience methods with specific transitions for widgets
   static Future<dynamic> fade(
-    dynamic destination, {
+    Widget destination, {
     dynamic arguments,
     Duration? duration,
   }) {
@@ -95,9 +140,21 @@ class Go {
     );
   }
 
-  /// Navigate with slide left transition - supports both String and Widget
+  static Future<dynamic> fadeToName(
+    String routeName, {
+    dynamic arguments,
+    Duration? duration,
+  }) {
+    return sailToName(
+      routeName,
+      arguments: arguments,
+      transition: TransitionType.fade,
+      duration: duration,
+    );
+  }
+
   static Future<dynamic> slideLeft(
-    dynamic destination, {
+    Widget destination, {
     dynamic arguments,
     Duration? duration,
   }) {
@@ -109,9 +166,21 @@ class Go {
     );
   }
 
-  /// Navigate with slide up transition - supports both String and Widget
+  static Future<dynamic> slideLeftToName(
+    String routeName, {
+    dynamic arguments,
+    Duration? duration,
+  }) {
+    return sailToName(
+      routeName,
+      arguments: arguments,
+      transition: TransitionType.slideLeft,
+      duration: duration,
+    );
+  }
+
   static Future<dynamic> slideUp(
-    dynamic destination, {
+    Widget destination, {
     dynamic arguments,
     Duration? duration,
     bool fullscreenDialog = true,
@@ -125,9 +194,126 @@ class Go {
     );
   }
 
-  /// Show modal with slide up transition - supports both String and Widget
+  static Future<dynamic> slideUpToName(
+    String routeName, {
+    dynamic arguments,
+    Duration? duration,
+  }) {
+    return sailToName(
+      routeName,
+      arguments: arguments,
+      transition: TransitionType.slideUp,
+      duration: duration,
+    );
+  }
+
+  static Future<dynamic> slideRight(
+    Widget destination, {
+    dynamic arguments,
+    Duration? duration,
+  }) {
+    return sailTo(
+      destination,
+      arguments: arguments,
+      transition: TransitionType.slideRight,
+      duration: duration,
+    );
+  }
+
+  static Future<dynamic> slideRightToName(
+    String routeName, {
+    dynamic arguments,
+    Duration? duration,
+  }) {
+    return sailToName(
+      routeName,
+      arguments: arguments,
+      transition: TransitionType.slideRight,
+      duration: duration,
+    );
+  }
+
+  static Future<dynamic> slideDown(
+    Widget destination, {
+    dynamic arguments,
+    Duration? duration,
+  }) {
+    return sailTo(
+      destination,
+      arguments: arguments,
+      transition: TransitionType.slideDown,
+      duration: duration,
+    );
+  }
+
+  static Future<dynamic> slideDownToName(
+    String routeName, {
+    dynamic arguments,
+    Duration? duration,
+  }) {
+    return sailToName(
+      routeName,
+      arguments: arguments,
+      transition: TransitionType.slideDown,
+      duration: duration,
+    );
+  }
+
+  static Future<dynamic> scale(
+    Widget destination, {
+    dynamic arguments,
+    Duration? duration,
+  }) {
+    return sailTo(
+      destination,
+      arguments: arguments,
+      transition: TransitionType.scale,
+      duration: duration,
+    );
+  }
+
+  static Future<dynamic> scaleToName(
+    String routeName, {
+    dynamic arguments,
+    Duration? duration,
+  }) {
+    return sailToName(
+      routeName,
+      arguments: arguments,
+      transition: TransitionType.scale,
+      duration: duration,
+    );
+  }
+
+  static Future<dynamic> rotation(
+    Widget destination, {
+    dynamic arguments,
+    Duration? duration,
+  }) {
+    return sailTo(
+      destination,
+      arguments: arguments,
+      transition: TransitionType.rotation,
+      duration: duration,
+    );
+  }
+
+  static Future<dynamic> rotationToName(
+    String routeName, {
+    dynamic arguments,
+    Duration? duration,
+  }) {
+    return sailToName(
+      routeName,
+      arguments: arguments,
+      transition: TransitionType.rotation,
+      duration: duration,
+    );
+  }
+
+  /// Show modal with slide up transition
   static Future<dynamic> modal(
-    dynamic destination, {
+    Widget destination, {
     dynamic arguments,
     Duration? duration,
   }) {
@@ -137,6 +323,19 @@ class Go {
       transition: TransitionType.slideUp,
       duration: duration,
       fullscreenDialog: true,
+    );
+  }
+
+  static Future<dynamic> modalToName(
+    String routeName, {
+    dynamic arguments,
+    Duration? duration,
+  }) {
+    return sailToName(
+      routeName,
+      arguments: arguments,
+      transition: TransitionType.slideUp,
+      duration: duration,
     );
   }
 }

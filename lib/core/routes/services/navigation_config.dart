@@ -9,4 +9,17 @@ class FlutxNavigation {
       'navigatorObservers': <NavigatorObserver>[RouteObserver<PageRoute>()],
     };
   }
+
+  /// Configure default transition and duration
+  static void configure({
+    TransitionType? defaultTransition,
+    Duration? defaultDuration,
+  }) {
+    if (defaultTransition != null) {
+      NavigationService.setDefaultTransition(defaultTransition);
+    }
+    if (defaultDuration != null) {
+      NavigationService.setDefaultDuration(defaultDuration);
+    }
+  }
 }
